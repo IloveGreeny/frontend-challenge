@@ -1,0 +1,244 @@
+.main-title {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    width: 60%;
+    letter-spacing: -0.01em;
+    color: #110011;
+    margin-bottom: 86px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-button {
+    padding: 12px 24px;
+    border: grey solid 0.25px;
+    border-radius: 24px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #121313;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #f2f2f2;
+}
+
+.label {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 8px;
+    width: 60%;
+}
+
+input,
+textarea {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin-top: 16px;
+}
+
+.input-container {
+    position: relative;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #000000;
+}
+
+input[type="text"].required {
+    border-color: #D32F2F;
+}
+
+.error-message {
+    color: #D32F2F;
+    font-size: 12px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.disabled {
+    background-color: #CCCCCC;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+button.enabled {
+    background-color: #1E88E5;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    gap: 96px;
+}
+
+.column {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.confirm-button-container span {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px -178px 20px 20px;
+    flex-grow: 1;
+}
+
+.pagination-container span {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-container span:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination-container .active {
+    font-weight: 600;
+    color: #000000;
+    background-color: #ffffff;
+    border: grey solid 0.25px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.synopsis-input {
+    height: 148px;
+    resize: none;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.pagination-container span:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.blue-arrow {
+    fill: #FFFFFF;
+}
+
+.grey-arrow {
+    fill: #666666;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .main-title {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .cancel-button {
+        align-self: flex-end;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+    .pagination-container {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .pagination-container span {
+        margin: 0 5px;
+    }
+
+    .confirm-button-container {
+        width: 100%;
+        margin-top: 16px;
+    }
+}
